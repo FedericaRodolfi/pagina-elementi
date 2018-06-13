@@ -1,0 +1,77 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<a href="Pagina personale elementi.html"><div id="home"> </div></a>
+
+<h1 id="portfoliotitolo"> Portfolio </h1>
+
+<div class=pagina>
+
+<ul id="tabs">
+     <li><a href="#tab1" onclick="comparespinner()">
+		Spinner
+	 </a>
+     </li>
+     <li><a href="#tab2" onclick="compareslideshow()">
+		Slideshow
+	 </a>
+     </li>
+     <li><a href="#tab3" onclick="comparealtri()">
+		Altri progetti
+	 </a>
+     </li>
+</ul>
+<div id="container">
+
+    <div class="content">
+        <a id="tab1"></a>
+        <h2 class="titoloscheda">Spinner</h2>
+	    <div id="spinnerbox" class="show">
+		<div id="bigboxspinner">
+			<div id="box">
+				<div id="spinner">  </div>
+			</div>
+
+			<div id="box2">
+				<div id="spinner2">  </div>
+			</div>
+		</div>
+		
+		<div>
+			<div id="secondspinner">  </div>
+			<div id="secondcspinner">  </div>
+		</div>
+	   </div>
+    </div>
+
+    <div class="content">
+        <a id="tab2"></a>
+        <h2 class="titoloscheda">Slideshow</h2>
+
+	<div id="slidebox" class="hide">
+		<div id="container-slideshow">
+			<div id="foto" class="first"> </div>
+		</div>
+
+		<div class="freccia" id="precedente" onclick="indietro()"></div>
+		<div class="freccia" id="prossima" onclick="avanti()"> </div>
+	</div>
+    </div>
+
+    <div class="content">
+        <a id="tab3"></a>
+        <h2 class="titoloscheda">Altri progetti</h2>
+		<div class="photo2"> </div>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

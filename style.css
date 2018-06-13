@@ -1,0 +1,692 @@
+h1 {
+	text-transform: uppercase;
+	font-family: Verdana;
+	//color: #B40431;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#portfoliotitolo {
+	margin-top: -45px;
+}
+
+#passionititolo {
+	margin-top: -45px;
+}
+
+#home {
+	width: 50px;
+	height: 50px;
+	background-image: url(Home.jpg);
+	background-size: cover;
+	margin-left: 50px;
+	margin-top: 40px;
+}
+
+#home:hover {
+	background-color: #C0C0C0;
+}
+
+body {
+	color: #088A85;
+	font-family: Verdana;
+	/*background-image: url(albero.jpg);
+	background-position: 250px -20px;*/
+}
+
+a {
+	color: #088A85;
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+#linkportfolio {
+	font-size: 15px;
+	text-decoration: none;
+}
+
+div.pagina {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-top: 5px dotted #088A85;
+	background-image: url(albero.jpg);
+	background-size: cover;
+}
+
+div.chisono {
+	position: absolute;
+	width: 23%;
+	height: 5%;
+	right: 75%;
+	left: 0%;
+	top: 5%;
+	bottom: 95%;
+	background: #D8D8D8;
+	border-left: 2px solid #088A85;
+	transition: 1.5s;
+}
+
+p {
+	color: black;
+	font-size: 15px;
+	margin-left: 15px;
+	margin-right: 10px;
+	padding-top: 10px;
+	clear: both;
+	height: 2px;
+	overflow: hidden;
+	transition: 0.8s;
+}
+
+div.voce {
+	padding-left: 25px;
+	padding-top: 5px;
+}
+
+div.chisono:hover {
+	position: absolute;
+	width: 23%;
+	height: 40%;
+	right: 75%;
+	left: 0%;
+	top: 5%;
+	bottom: 0%;
+	background: #D8D8D8;
+	transition: 2s;
+	opacity: 1;
+}
+
+div.chisono:hover p {
+	clear: both;
+	height: 60px;
+	overflow: hidden;
+	colore: black;
+	transition: 2s;
+	transition-delay: 0.3s;
+}
+
+div.portfolio {
+	position: absolute;
+	width: 23%;
+	height: 5%;
+	right: 50%;
+	left: 25%;
+	top: 5%;
+	bottom: 75%;
+	background: #D8D8D8;
+	border-left: 2px solid #088A85;
+	transition: 1.5s;
+}
+
+div.portfolio:hover {
+	position: absolute;
+	width: 23%;
+	height: 55%;
+	right: 50%;
+	left: 25%;
+	top: 5%;
+	bottom: 0%;
+	background: #D8D8D8;
+	transition: 2s;
+}
+
+div.portfolio:hover > p {
+	clear: both;
+	height: 200px;
+	overflow: hidden;
+	transition: 3s;
+	transition-delay: 0.3s;
+}
+
+#bigboxspinner {
+	position: absolute;
+	opacity: 1;
+	left: 400px;
+	top: 150px;
+	width: 200px;
+	height: 200px;
+}
+
+#bigboxspinner1 {
+	position: absolute;
+	opacity: 0;
+	left: 100px;
+	top: 150px;
+	width: 200px;
+	height: 200px;
+	transition: 0.7s;
+}
+
+div.portfolio:hover > #bigboxspinner1 {
+	opacity: 1;
+	transition: 3s;
+	transition-delay: 0.7s;
+}
+
+#didascalia {
+	position: absolute;
+	opacity: 0;
+	top: 75%;
+	transition: 1s;
+}
+
+div.portfolio:hover > #didascalia {
+	opacity: 1;
+	transition: 3s;
+	transition-delay: 1.1s;
+}
+
+div.curriculum {
+	position: absolute;
+	width: 23%;
+	height: 5%;
+	right: 25%;
+	left: 50%;
+	top: 5%;
+	bottom: 75%;
+	background: #D8D8D8;
+	border-left: 2px solid #088A85;
+	transition: 1s;
+}
+
+div.curriculum:hover {
+	position: absolute;
+	width: 23%;
+	height: 40%;
+	right: 25%;
+	left: 50%;
+	top: 5%;
+	bottom: 0%;
+	background: #D8D8D8;
+	transition: 1.5s;
+}
+
+div.curriculum:hover > p {
+	clear: both;
+	height: 40px;
+	overflow: hidden;
+	colore: black;
+	transition: 2s;
+	transition-delay: 0.25s;
+}
+
+
+div.contatti {
+	position: absolute;
+	width: 23%;
+	height: 5%;
+	right: 0%;
+	left: 75%;
+	top: 5%;
+	bottom: 75%;
+	background: #D8D8D8;
+	border-left: 2px solid #088A85;
+	transition: 0.5s;
+}
+
+div.contatti:hover {
+	position: absolute;
+	width: 23%;
+	height: 13%;
+	right: 0%;
+	left: 75%;
+	top: 5%;
+	bottom: 0%;
+	background: #D8D8D8;
+	transition: 0.7s;
+}
+
+div.contatti:hover > p {
+	clear: both;
+	height: 200px;
+	overflow: hidden;
+	transition: 3s;
+	transition-delay: 0.25s;
+}
+
+#lista {
+	margin-top: -20px;
+	transition: 0.5s;
+}
+
+#container {
+	clear: both;
+	height: 2px;
+	overflow: hidden;
+}
+
+/*spinner*/
+	@keyframes spin {
+		0% {transform: rotate(0) scale(1)}
+		10% {transform: scale(1)}
+		30% {transform: rotate(180deg) scale(2)}
+		50% {transform: rotate(360deg) scale(1)}
+		60% {transform: scale(1)}
+		80% {transform: rotate(180deg) scale(2)}
+		100% {transform: rotate(0deg) scale(1)}
+		}
+	@keyframes move {
+		0% {transform: translate(0,0)}
+		10% {transform: translate(0,-100px)}
+		30% {transform: translate(-50px,-50px)}
+		50% {transform: translate(-100px,-100px)}
+		60% {transform: translate(-100px,0)}
+		80% {transform: translate(-50px,-50px)}
+		100% {transform: translate(0,0)}
+		}
+	
+	@keyframes move2 {
+		0% {transform: translate(-100px,-100px)}
+		10% {transform: translate(-100px,0)}
+		30% {transform: translate(-50px,-50px)}
+		50% {transform: translate(0,0)}
+		60% {transform: translate(0,-100px)}
+		80% {transform: translate(-50px,-50px)}
+		100% {transform: translate(-100px,-100px)}
+		}
+	
+	#box {
+		animation: move 4s infinite;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		}
+	
+	#spinner {
+		animation: spin 4s infinite;
+		background-color: #088A85;
+		//border-radius: 50%;
+		height: 30px;
+		width: 30px;
+		opacity: 0.5;
+		}
+
+	
+	#box2 {
+		animation: move2 4s infinite;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		}
+	
+	#spinner2 {
+		animation: spin 4s infinite;
+		background-color: #088A85;
+		//border-radius: 50%;
+		height: 30px;
+		width: 30px;
+		opacity: 0.5;
+		}
+/*2spinner*/
+
+	@keyframes secondspin {
+		from {width: 0px;
+			height: 0px;
+			}
+		to {width: 50px;
+			height: 50px;
+			}
+		}
+	@keyframes secondcspin {
+		from {width: 50px;
+			height: 50px;
+			}
+		to {width: 0px;
+			height: 0px;
+			}
+		}
+	
+	#secondspinner {
+		animation: secondspin 1s infinite alternate;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		background-color: #088A85;
+		top: 200px;
+		left: 150px;
+		height: 50px;
+		width: 50px;
+		opacity: 0.5;
+		}
+	#secondcspinner {
+		animation: secondcspin 1s infinite alternate;	
+		opacity: 0.5;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		background-color: #088A85;
+		position: absolute;
+		top: 200px;
+		left: 150px;
+		height: 50px;
+		width: 50px;
+		}
+
+	
+	#spinnerbox.hide {
+		opacity: 0;
+	}
+
+	#spinnerbox.show {
+		opacity: 1;
+	}
+
+#tabs { 
+	font-family: Verdana;
+	font-size: 14px;
+}
+
+#tabs li {
+	list-style: none;
+	float: left;
+	width: 300px;
+	height: 35px;
+	margin: 0 5px 10px 5px;
+}
+
+#tabs li a {
+	background-color: #E8E8E8;
+	color: #088A85;
+	text-decoration: none;
+	font-weight: bold;
+	width: 300px;
+	height: 35px;
+	display: block;
+	text-align: center;
+	line-height: 35px;
+    }
+#tabs li a:hover, #tabs li a:active { 
+	background-color: #ededed; 
+}
+ 
+div.content {
+	color: #088A85;
+	font-family: Verdana;
+	font-size: 12px;
+	background-color: #D8D8D8;
+	width: 1500px;
+	height: 700px;
+	line-height: 22px;
+    }
+ 
+#container {
+	clear: both;
+	height: 690px;
+	overflow: hidden;
+}
+
+.titoloscheda {
+	margin-top: 0px;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+
+/*slideshow*/
+
+	#foto {
+		opacity: 0;
+		position: absolute;
+		width: 1000px;
+		height: 600px;
+		top: 120px;
+		left: 265px;
+		background-color: #C0C0C0;
+	}
+
+	#foto.first {
+		opacity: 1;
+		background-image: url(Uno.jpg);
+		background-size: cover;
+		transition: 0.5s;
+	}	
+
+	#foto.second {
+		opacity: 1;
+		background-image: url(Due.jpg);
+		background-size: cover;
+		transition: 0.5s;
+	}
+
+	#foto.third {
+		opacity: 1;
+		background-image: url(Tre.jpg);
+		background-size: cover;
+		transition: 0.5s;
+	}
+
+	#foto.fourth {
+		opacity: 1;
+		background-image: url(Quattro.jpg);
+		background-size: cover;
+		transition: 0.5s;
+	}
+
+	.freccia {
+		height: 600px;
+		width: 30px;
+		background-color: #101010;
+		opacity: 0.7;
+	}
+
+	.freccia:hover {
+		height: 600px;
+		width: 50px;
+		background-color: #101010;
+		opacity: 0.7;
+		transition: all 0.3s;
+	}
+
+	#prossima {
+		background-color: #101010;
+		margin-left: 1235px;
+		margin-top: -600px;
+		transition: all 0.3s;
+	}
+
+	#prossima:hover {
+		background-color: #101010;
+		margin-left: 1215px;
+		margin-top: -600px;
+		transition: all 0.3s;
+	}
+
+	#precedente {
+		margin-top: 20px;
+		margin-left: 265px;
+	}
+
+	#slidebox.hide {
+		opacity: 0;
+	}
+
+	#slidebox.show {
+		opacity: 1;
+	}
+
+.photo2 {
+	margin-top: 50px;
+	margin-left: 50%;
+	width: 500px;
+	height: 500px;
+	background-image: url(Copertina.jpg);
+	background-size: cover;
+	transform: translate(-50%,0%);
+}
+
+
+
+/* le mie passioni */
+
+div.content2 {
+	color: #088A85;
+	font-family: Verdana;
+	font-size: 12px;
+	background-color: #D8D8D8;
+	width: 1500px;
+	height: 1000px;
+	line-height: 22px;
+}
+ 
+#container2 {
+	clear: both;
+	height: 990px;
+	overflow: hidden;
+}
+
+
+.colonna {
+	width: 250px;
+	height: 400px;
+	margin-top: 30px;
+}
+
+#colonna1 {
+	margin-left: 140px;
+}
+
+#colonna2 {
+	margin-left: 460px;
+	margin-top: -400px;
+}
+
+#colonna3 {
+	margin-left: 780px;
+	margin-top: -400px;
+}
+
+#colonna4 {
+	margin-left: 1100px;
+	margin-top: -400px;
+}
+
+#sposini {
+	width: 250px;
+	height: 250px;
+	background-image: url(Sposini.jpg);
+	background-size: cover;
+}
+
+#sposi {
+	width: 250px;
+	height: 250px;
+	background-image: url(SpilleSposi.jpeg);
+	background-size: cover;
+}
+
+#spille {
+	width: 250px;
+	height: 250px;
+	background-image: url(Medico.jpg);
+	background-size: cover;
+}
+
+#musicisti {
+	width: 250px;
+	height: 250px;
+	background-image: url(Musicisti.jpg);
+	background-size: cover;
+}
+
+.did {
+	font-size: 13px;
+	height: 50px;
+}
+
+#drawbox {
+	height: 1500px;
+}
+
+#colonna11 {
+	margin-left: 75px;
+}
+
+#colonna12 {
+	margin-left: 550px;
+	margin-top: -400px;
+}
+
+#colonna13 {
+	margin-left: 1025px;
+	margin-top: -400px;
+}
+
+#colonna14 {
+	margin-left: 75px;
+	margin-top: 75px;
+}
+
+#colonna15 {
+	margin-left: 550px;
+	margin-top: -400px;
+}
+
+#colonna16 {
+	margin-left: 1025px;
+	margin-top: -400px;
+}
+
+#palissandro {
+	width: 400px;
+	height: 400px;
+	background-image: url(Palissandro.jpg);
+	background-size: cover;
+}
+
+
+#ADP {
+	width: 400px;
+	height: 400px;
+	background-image: url(ADP.jpg);
+	background-size: cover;
+}
+
+#sushi {
+	width: 400px;
+	height: 400px;
+	background-image: url(Sushi.jpg);
+	background-size: cover;
+}
+
+#turchese {
+	width: 400px;
+	height: 400px;
+	background-image: url(Turchese.jpg);
+	background-size: cover;
+}
+
+#anello {
+	width: 400px;
+	height: 400px;
+	background-image: url(Anello.jpg);
+	background-size: cover;
+}
+
+#rosone {
+	width: 400px;
+	height: 400px;
+	background-image: url(Rosone.jpg);
+	background-size: cover;
+}
+
+.did {
+	font-size: 13px;
+	height: 50px;
+}
+
+.did1 {
+	font-size: 13px;
+	color: white;
+	height: 40px;
+	margin-left: 0px;
+	margin-top: -50px;
+	width: 385px;
+	background-color: rgba(0,0,0,0.6);
+	opacity: 0;
+	padding-left: 15px;
+}
+
+div.photo:hover + .did1 {
+	opacity: 1;
+	transition: 1s;	
+}
